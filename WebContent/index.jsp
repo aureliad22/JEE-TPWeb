@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 
 <%@include file="/head.jsp"%>
-<body>
+
     <div id="titre">
         <h1>TP Web - Accueil</h1>
     </div>
@@ -16,5 +16,3 @@
     </div>
 
 <%@include file="/footer.jsp"%>
-</body>
-</html>

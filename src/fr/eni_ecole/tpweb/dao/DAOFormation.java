@@ -113,7 +113,7 @@ public class DAOFormation implements DAOBase<Formation> {
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
-			throw new Exception("Problème d'insertion du message dans la base TPJavaEE_GestionFormations!");
+			throw new Exception("Problème d'affichage des formations à partir de la base TPJavaEE_GestionFormations!");
 		}
 		return listeFormations;
 	}
