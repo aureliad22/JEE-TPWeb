@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../themes/basique/style.css">
+
+    <title>TP Web - Accès Stagiaire</title>
+</head>
+<body>
+    <div id="titre">
+        <h1>TP Web - Accès Stagiaire</h1>
+    </div>
+    
+    <div id="navigation">
+        <div id="menu">
+            <a href="../index.html">Accueil</a>
+            <a href="../formations.html">Liste des formations</a>
+            <a href="../animateur/accesAnimateur.html">Accès Animateur</a>
+            <a href="../stagiaire/accesStagiaire.html">Accès Stagiaire</a>       
+        </div>
+        <div id="research">
+            <form name="formRecherche" action="http://www.google.fr/search" target="_blank" method="get">
+                <input type="hidden" name="hl" value="fr" />            
+                <input type="text" id="q" name="q" placeholder="Entrez votre recherche" />
+                <input type="submit" name="rechercher" value="rechercher" />
+            </form>
+        </div>
+    </div>
+    <div id="content">
+        <form action="" method="post">
+            <label for="login"> Identifiant : </label>
+            <input type="text" name="login" id="login" /> 
+            <br>
+            <label for="password">Mot de Passe : </label>
+            <input type="password" name="password" id="password" /> 
+            <br>
+            <input type="submit" name="Se connecter" value="Se connecter" onsubmit="return connexionStagiaire();"/>
+        </form>
+    </div>
+
+    <!--  Pied de page -->
+    <div id="footer">
+       TP <a href="http://www.eni-ecole.fr" target="_blank">ENI Ecole</a>
+   </div>
+</body>
+</html>

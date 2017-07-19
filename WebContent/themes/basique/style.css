@@ -1,0 +1,98 @@
+@CHARSET "UTF-8";
+
+* {
+	color: teal;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+#page {
+    width: 750px;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+#navigation {
+	border: 1px solid teal;	
+    font-size: 14px;
+	float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left : 5px;	
+    margin-top:20px;
+	margin-bottom: 15px;
+	width:200px;	
+}
+
+#navigation a {
+    color: teal;
+}
+
+#titre {
+	border-bottom: 5px solid teal;
+	height: 75px;
+}
+
+#content {
+	width: 500px;
+	padding: 10px;
+	text-align: justify;
+	min-height: 150px;
+}
+
+#footer {
+    text-align : center; 
+    font-size : 10px;
+    margin-top : 20px; 
+    padding-top : 10px; 
+    border-top : 1px dashed teal;
+    width: 750px;
+} 
+
+#footer a {
+	text-decoration: none;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+}
+
+label {
+    margin-top:  10px;
+}
+
+input[type=submit] {
+	   box-shadow: 1px 1px 2px black;	
+}
+
+/* prise de focus */
+input:focus{
+    background-color: white;
+}
+
+input[type=submit]:hover {
+    background-color: #b753cc;
+}
+
+/* rollover */
+input[type=submit]:focus {
+    background-color: #fcdede;
+}
+
+input[type=submit]:active {
+    background-color: #fcdede;
+    box-shadow: 1px 1px 1px #d83f3d;
+}
+
+.formation {
+    border: 1px dotted;
+}
+
+.formation h2, #navigation a:hover {
+    color: white;
+    background-color: rgb(51, 102, 102);
+}
+
+.formation p, li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
