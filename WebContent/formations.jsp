@@ -9,12 +9,11 @@
 <%@include file="/navigation.jsp"%>
 <div class="formation">
 	<%
-		List<Formation> listeFormations = (List<Formation>) request
-				.getAttribute("formations");
+		List<Formation> listeFormations = (List<Formation>) request.getAttribute("formations");
 		for (Formation f : listeFormations) {
 	%>
 	<div class="formationIndiv">
-		<h2 id="libelleFormation"><%=f.getLibelle()%></h2>
+		<h2>&nbsp;<%=f.getLibelle()%></h2>
 		<p><%=f.getDescription()%></p>
 		<ul>
 			<li>Date de début : <%=ManipDate.dateAuFormatLong(f.getDateDebut())%></li>

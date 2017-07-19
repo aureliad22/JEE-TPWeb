@@ -20,11 +20,16 @@
     padding-left : 5px;	
     margin-top:20px;
 	margin-bottom: 15px;
-	width:200px;	
+	width:200px;
 }
 
 #navigation a {
     color: teal;
+    display: block;
+}
+
+#navigation form {
+    margin-top:5px;	
 }
 
 #titre {
@@ -56,43 +61,45 @@
 	text-decoration: underline;
 }
 
-label {
-    margin-top:  10px;
-}
-
-input[type=submit] {
-	   box-shadow: 1px 1px 2px black;	
-}
-
-/* prise de focus */
-input:focus{
-    background-color: white;
-}
-
-input[type=submit]:hover {
-    background-color: #b753cc;
-}
-
-/* rollover */
-input[type=submit]:focus {
-    background-color: #fcdede;
-}
-
-input[type=submit]:active {
-    background-color: #fcdede;
-    box-shadow: 1px 1px 1px #d83f3d;
-}
-
 .formation {
-    border: 1px dotted;
+    width: 500px;
 }
 
 .formation h2, #navigation a:hover {
     color: white;
-    background-color: rgb(51, 102, 102);
+    background-color: teal;
 }
 
 .formation p, li {
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.formationIndiv {
+    padding: 10px;
+    border: 1px dotted teal;
+    margin-bottom: 5px;	
+}
+
+form.connexion {
+    padding-bottom: 40px;
+}
+
+form.connexion label {
+    float: left;
+    min-width: 130px;
+    text-align: left;
+    font-weight: bold;
+}
+
+form.connexion > .bloc_identifiant, form.connexion > .bloc_motdepasse {
+    padding-bottom: 5px;
+}
+
+.champtexte {
+    border-style: solid;
+}
+
+#seconnecter {
+    margin-left: 100px;
 }
