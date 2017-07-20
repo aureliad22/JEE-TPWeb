@@ -6,7 +6,7 @@
     </div>
 <%@include file="/navigation.jsp" %>       
     <div id="content">
-        <form class="connexion" action="" method="post">
+        <form class="connexion" action="/AccesAnimateur" method="post">
         <div class="bloc_identifiant">
             <label for="login">Identifiant</label>
             <input class="champtexte" type="text" id="login" name="login" />

@@ -24,7 +24,7 @@ import fr.eni_ecole.tpweb.bo.Formation;
  * @date 19 juil. 2017
  * @version TPWeb V1.0
  */
-public class DAOFormation implements DAOBase<Formation> {
+public class DAOFormation implements IDAOBase<Formation> {
 
 	private static final String RQ_INSERT = "INSERT INTO formations(libelle, description, debut, fin) VALUES(?,?,?,?);";
 	private static final String RQ_ALL = "SELECT * FROM formations;";
@@ -32,7 +32,7 @@ public class DAOFormation implements DAOBase<Formation> {
 	/**
 	 * {@inheritDoc}
 	 * 
-	 * @see fr.eni_ecole.tpweb.dao.DAOBase#update(java.lang.Object)
+	 * @see fr.eni_ecole.tpweb.dao.IDAOBase#update(java.lang.Object)
 	 */
 	@Override
 	public void update(Formation formation) throws Exception {
@@ -43,7 +43,7 @@ public class DAOFormation implements DAOBase<Formation> {
 	/**
 	 * {@inheritDoc}
 	 * 
-	 * @see fr.eni_ecole.tpweb.dao.DAOBase#insert(java.lang.Object)
+	 * @see fr.eni_ecole.tpweb.dao.IDAOBase#insert(java.lang.Object)
 	 */
 	@Override
 	public void insert(Formation formation) throws Exception {
@@ -74,7 +74,7 @@ public class DAOFormation implements DAOBase<Formation> {
 	/**
 	 * {@inheritDoc}
 	 * 
-	 * @see fr.eni_ecole.tpweb.dao.DAOBase#delete(java.lang.Object)
+	 * @see fr.eni_ecole.tpweb.dao.IDAOBase#delete(java.lang.Object)
 	 */
 	@Override
 	public void delete(Formation formation) throws Exception {
@@ -85,7 +85,7 @@ public class DAOFormation implements DAOBase<Formation> {
 	/**
 	 * {@inheritDoc}
 	 * 
-	 * @see fr.eni_ecole.tpweb.dao.DAOBase#selectById(java.lang.Object)
+	 * @see fr.eni_ecole.tpweb.dao.IDAOBase#selectById(java.lang.Object)
 	 */
 	@Override
 	public <Type> Formation selectById(Type id) throws Exception {
@@ -97,7 +97,7 @@ public class DAOFormation implements DAOBase<Formation> {
 	 * {@inheritDoc}
 	 * Méthode héritée en charge de retourner l'ensemble des formations
 	 * à partir de la BdD.
-	 * @see fr.eni_ecole.tpweb.dao.DAOBase#selectAll()
+	 * @see fr.eni_ecole.tpweb.dao.IDAOBase#selectAll()
 	 */
 	@Override
 	public List<Formation> selectAll() throws Exception {

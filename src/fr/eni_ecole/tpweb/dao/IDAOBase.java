@@ -12,7 +12,7 @@ import java.util.List;
  * @date 19 juil. 2017
  * @version TPWeb V1.0
  */
-public interface DAOBase<T> {
+public interface IDAOBase<T> {
 
 	public void update(T data) throws Exception;
 	public void insert(T data) throws Exception;

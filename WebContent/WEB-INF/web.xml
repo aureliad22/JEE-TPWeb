@@ -14,4 +14,14 @@
     <servlet-name>FormationServlet</servlet-name>
     <url-pattern>/Formations</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description>Servlet d'authentification pour l'animateur</description>
+    <display-name>AnimCnxServlet</display-name>
+    <servlet-name>AnimCnxServlet</servlet-name>
+    <servlet-class>fr.eni_ecole.tpweb.servlet.AnimCnxServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AnimCnxServlet</servlet-name>
+    <url-pattern>/AccesAnimateur</url-pattern>
+  </servlet-mapping>
 </web-app>
