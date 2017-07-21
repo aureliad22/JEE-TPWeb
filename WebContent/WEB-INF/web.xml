@@ -24,4 +24,14 @@
     <servlet-name>AnimCnxServlet</servlet-name>
     <url-pattern>/AccesAnimateur</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description>Servlet vérifiant si l'animateur est déjà connecté ou pas</description>
+    <display-name>CheckAnimServlet</display-name>
+    <servlet-name>CheckAnimServlet</servlet-name>
+    <servlet-class>fr.eni_ecole.tpweb.servlet.CheckAnimServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckAnimServlet</servlet-name>
+    <url-pattern>/AccesAnimateur</url-pattern>
+  </servlet-mapping>
 </web-app>
